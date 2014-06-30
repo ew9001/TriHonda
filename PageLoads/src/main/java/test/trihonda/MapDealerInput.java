@@ -35,6 +35,7 @@ public class MapDealerInput {
 	  public String browser_type;
 	  public String fail,error;
 	  public String Dealer;
+	  public String name;
 	  public String baseUrl = "http://dev.trihonda.pubmodev.com";
 		public static final String AUTOMATE_KEY = "XsPyFTirN4mH8aCLMB9A";
 		static String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
