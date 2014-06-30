@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ 
+<suite name="TriHonda"  verbose="1">
+    <parameter name="browser" value="firefox"/>
+ 
+  
+    <test name="Map Dealer Search" >
+         
+  <groups> 
+    <run> 
+      <include name="map"/> 
+    </run> 
+  </groups> 
+  <classes> 
+    <class name="test.trihonda.MapDealerInput"/> 
+  </classes> 
+</test>
+    
+     
+   
+
+
+</suite>
