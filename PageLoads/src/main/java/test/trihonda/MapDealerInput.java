@@ -90,6 +90,7 @@ public class MapDealerInput {
 			
 		  driver.get(baseUrl);
 		  driver.get(baseUrl + "/honda-dealer-results?zip=10466&all=1");
+		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("APPLE HONDA");
 		    driver.findElement(By.linkText("GO")).click();
