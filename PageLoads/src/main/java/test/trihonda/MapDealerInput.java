@@ -745,7 +745,7 @@ public class MapDealerInput {
 		    
 		    return driver;
 	 }
-	 @AfterMethod(alwaysRun = true, description = "take screenshot on fail") 
+	 @AfterMethod(alwaysRun = true, description = "take screenshot on  fail") 
 	 public void afterMethod_takeScreenshot(ITestResult result) throws Exception { 
 	 if (!result.isSuccess()) { 
 		 
