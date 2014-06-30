@@ -457,7 +457,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).sendKeys("JOYCE HONDA");
 		    driver.findElement(By.linkText("GO")).click();
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		    File scrFile46 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		    
 		    Dealer="-Joyce-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
@@ -466,7 +466,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).sendKeys("MADISON HONDA");
 		    driver.findElement(By.linkText("GO")).click();
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		    File scrFile47 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		   
 		    Dealer="-Madison-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
@@ -475,7 +475,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).sendKeys("MAHWAH HONDA");
 		    driver.findElement(By.linkText("GO")).click();
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		    File scrFile48 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	
 		    Dealer="-Mahwah-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
@@ -484,7 +484,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).sendKeys("METRO HONDA");
 		    driver.findElement(By.linkText("GO")).click();
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		    File scrFile49 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		  
 		    Dealer="-Metro-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
@@ -492,7 +492,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).sendKeys("OPEN ROAD HONDA");
 		    driver.findElement(By.linkText("GO")).click();
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		    File scrFile50 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		   
 		    Dealer="-Open-Road-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
@@ -501,7 +501,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).sendKeys("PAUL MILLER HONDA");
 		    driver.findElement(By.linkText("GO")).click();
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		    File scrFile51 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		  
 		    Dealer="-Paul-Miller-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
@@ -509,7 +509,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).sendKeys("PHILLIPSBURG-EASTON");
 		    driver.findElement(By.linkText("GO")).click();
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		    File scrFile52 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		    
 		    Dealer="-Phillipsburg-Easton.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
