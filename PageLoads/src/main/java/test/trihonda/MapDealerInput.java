@@ -731,7 +731,7 @@ public class MapDealerInput {
 	 public WebDriver takeScreen(String name) throws IOException
 	 {
 		 WebDriver augmentedDriver = new Augmenter().augment(driver);
-	     System.out.println("Let me take a screenshot " +name);
+	     System.out.println("Let me take a screenshot of the page " +name);
 		  
 		    	
 		    File screenshot = ((TakesScreenshot)augmentedDriver).getScreenshotAs(OutputType.FILE);
@@ -747,7 +747,7 @@ public class MapDealerInput {
 		 
 
 		 WebDriver augmentedDriver = new Augmenter().augment(driver);
-	     System.out.println("I found a bug placed a screen shot @ ContactUS");
+	     System.out.println("I found a bug placed a screen shot @ Map Dealer Folder");
 		  
 		    	
 		    File screenshot = ((TakesScreenshot)augmentedDriver).getScreenshotAs(OutputType.FILE);
