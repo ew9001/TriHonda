@@ -18,6 +18,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -92,7 +93,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("APPLE HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Apple-Honda.png";
 		    System.out.println("Dealer  is " +Dealer);
@@ -102,14 +103,14 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).sendKeys("ATLANTIC HONDA");
 		    driver.findElement(By.linkText("GO")).click();
 		    driver.findElement(By.name("zip")).clear();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Atlantic-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).sendKeys("BABYLON HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		  
 		    Dealer="-Babylon-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -117,7 +118,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("BARON HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Baron-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -125,7 +126,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("BAY RIDGE HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer= "-Bay-Ridge-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -133,7 +134,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("BREWSTER HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer= "-Brewster-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -141,7 +142,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("BRONX HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		  
 		    Dealer="-Bronx-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -149,7 +150,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("CURRY HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Curry-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -157,7 +158,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("FRIENDLY HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Apple-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -165,7 +166,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HILLSIDE HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Hillside-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -173,7 +174,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA CITY");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Honda-City.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -181,7 +182,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA MANHASSET");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Honda-Manhasset.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -189,7 +190,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF KINGSTON");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Honda-of-Kingston.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -197,7 +198,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF MANHATTAN");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Honda-of-Manhattan.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -205,7 +206,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF NANUET");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		  
 		    Dealer="-Honda-of_Nanuet.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -214,7 +215,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF NEW ROCHELLE");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Honda-of-NewRochelle.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -222,7 +223,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();    
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF STATEN ISLAND");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Honda-of-Staten_Island.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -230,7 +231,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HUNTINGTON HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Huntington-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -238,7 +239,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("MIDDLETOWN HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Middleton-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -246,7 +247,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("MILLENNIUM HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Milennium-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -254,7 +255,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("MOREHEAD HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Morehead-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -263,7 +264,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("MT. KISCO HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		  
 		    Dealer="-Mt-Kisco-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -271,7 +272,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("NARDY HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Nardy-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -279,7 +280,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("NORTH SHORE HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-North-Shore-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -287,7 +288,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("PARAGON HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Parago-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -295,7 +296,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("PLAZA HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer= "-Plaza-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -303,7 +304,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("SOUTH SHORE HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-SouthShore-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -311,7 +312,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("TARRYTOWN HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Tarrytown-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -319,7 +320,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("WHITE PLAINS HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		
 		    Dealer="-White-Plains-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -327,7 +328,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("YONKERS HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Yonkers-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -336,7 +337,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("AUTOSPORT HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-AutoSport-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -344,7 +345,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("CAUSEWAY HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Causeway-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -352,7 +353,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("CLINTON HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		 
 		    Dealer="-Clinton-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -360,7 +361,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("COAST HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Coast-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -368,7 +369,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("DCH ACADEMY HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		  
 		    Dealer="-DCH-Academy-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -376,7 +377,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("DCH KAY HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-DCH-Kay-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -384,7 +385,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("DCH PARAMUS HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-DCH-Paramus-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -393,14 +394,14 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("GARDEN STATE HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		
 		    Dealer="-Garden-State-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HACKETTSTOWN HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		
 		    Dealer="-Hackettstown-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -408,7 +409,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF FREEHOLD");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Honda-of-Freehold.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -416,7 +417,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF PRINCETON");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		 
 		    Dealer="-Honda-of-Princeton.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -424,7 +425,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF TENAFLY");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		  
 		    Dealer="-Honda-of-Tenafly.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -432,7 +433,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF TOMS RIVER");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Honda-of-TomsRiver.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -440,7 +441,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA UNIVERSE");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Honda-Universe.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -448,7 +449,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HUDSON HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Hudson-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -459,7 +460,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("MADISON HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Madison-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -468,7 +469,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("MAHWAH HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 	
 		    Dealer="-Mahwah-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -477,7 +478,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("METRO HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		  
 		    Dealer="-Metro-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -485,7 +486,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("OPEN ROAD HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Open-Road-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -494,7 +495,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("PAUL MILLER HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		  
 		    Dealer="-Paul-Miller-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -502,7 +503,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("PHILLIPSBURG-EASTON");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Phillipsburg-Easton.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -511,7 +512,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("PLANET HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Planet-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -519,7 +520,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("ROUTE 22 HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Route22-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -527,7 +528,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("ROUTE 23 HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="-Route23-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -536,7 +537,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("SUSSEX HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		  
 		    Dealer="-Sussex-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -544,7 +545,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("V.I.P. HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		 
 		    Dealer="-Garden-State-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -552,14 +553,14 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("CURTISS RYAN HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="Curtiss-Ryan-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("GREENWICH HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		 
 		    Dealer="Greenwich-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -567,7 +568,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF DANBURY");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="Honda-of=Danbury.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -575,7 +576,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF WESTPORT");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		   
 		    Dealer="Honda-of-Westport.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
@@ -583,7 +584,7 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("JOYCE HONDA");
 		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
 		    Dealer="-Joyce-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
