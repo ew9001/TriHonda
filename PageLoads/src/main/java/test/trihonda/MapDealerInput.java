@@ -76,7 +76,7 @@ public class MapDealerInput {
 			  driver=browserAndroid();
 			}
 		  
-		  String name=""+ browser+"/MapDealer/" + Dealer+ "_" + "Successful-Completed-ContactUS.png";
+		  String name=""+ browser+"/MapDealer/" + Dealer+ "" + "";
 		 
 			  System.out.println("Let me see which one get tested " +browser);
 
@@ -92,9 +92,10 @@ public class MapDealerInput {
 		    driver.findElement(By.name("zip")).sendKeys("APPLE HONDA");
 		    driver.findElement(By.linkText("GO")).click();
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		 
+		    
 		    Dealer="-Apple-Honda.png";
-		    takeScreen(name);
+		    
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("ATLANTIC HONDA");
@@ -103,14 +104,14 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Atlantic-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).sendKeys("BABYLON HONDA");
 		    driver.findElement(By.linkText("GO")).click();
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  
 		    Dealer="-Babylon-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("BARON HONDA");
@@ -118,7 +119,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Baron-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("BAY RIDGE HONDA");
@@ -126,7 +127,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer= "-Bay-Ridge-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("BREWSTER HONDA");
@@ -134,7 +135,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer= "-Brewster-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("BRONX HONDA");
@@ -142,7 +143,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  
 		    Dealer="-Bronx-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("CURRY HONDA");
@@ -150,7 +151,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Curry-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("FRIENDLY HONDA");
@@ -158,7 +159,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Apple-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HILLSIDE HONDA");
@@ -166,7 +167,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Hillside-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA CITY");
@@ -174,7 +175,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="-Honda-City.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA MANHASSET");
@@ -182,7 +183,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="-Honda-Manhasset.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF KINGSTON");
@@ -190,7 +191,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Honda-of-Kingston.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF MANHATTAN");
@@ -198,7 +199,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="-Honda-of-Manhattan.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF NANUET");
@@ -206,7 +207,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  
 		    Dealer="-Honda-of_Nanuet.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    
 		    driver.findElement(By.name("zip")).clear();
@@ -215,7 +216,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="-Honda-of-NewRochelle.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();    
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF STATEN ISLAND");
@@ -223,7 +224,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="-Honda-of-Staten_Island.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HUNTINGTON HONDA");
@@ -231,7 +232,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="-Huntington-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("MIDDLETOWN HONDA");
@@ -239,7 +240,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Middleton-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("MILLENNIUM HONDA");
@@ -247,7 +248,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="-Milennium-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("MOREHEAD HONDA");
@@ -255,7 +256,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Morehead-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    
 		    driver.findElement(By.name("zip")).clear();
@@ -264,7 +265,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  
 		    Dealer="-Mt-Kisco-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("NARDY HONDA");
@@ -272,7 +273,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="-Nardy-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("NORTH SHORE HONDA");
@@ -280,7 +281,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-North-Shore-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("PARAGON HONDA");
@@ -288,7 +289,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Parago-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("PLAZA HONDA");
@@ -296,7 +297,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer= "-Plaza-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("SOUTH SHORE HONDA");
@@ -304,7 +305,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-SouthShore-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("TARRYTOWN HONDA");
@@ -312,7 +313,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Tarrytown-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("WHITE PLAINS HONDA");
@@ -320,7 +321,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		    Dealer="-White-Plains-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("YONKERS HONDA");
@@ -328,7 +329,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="-Yonkers-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    
 		    driver.findElement(By.name("zip")).clear();
@@ -337,7 +338,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-AutoSport-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("CAUSEWAY HONDA");
@@ -345,7 +346,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="-Causeway-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("CLINTON HONDA");
@@ -353,7 +354,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		 
 		    Dealer="-Clinton-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("COAST HONDA");
@@ -361,7 +362,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Coast-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("DCH ACADEMY HONDA");
@@ -369,7 +370,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  
 		    Dealer="-DCH-Academy-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("DCH KAY HONDA");
@@ -377,7 +378,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-DCH-Kay-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("DCH PARAMUS HONDA");
@@ -385,7 +386,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-DCH-Paramus-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    
 		    driver.findElement(By.name("zip")).clear();
@@ -394,14 +395,14 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		    Dealer="-Garden-State-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HACKETTSTOWN HONDA");
 		    driver.findElement(By.linkText("GO")).click();
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		    Dealer="-Hackettstown-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF FREEHOLD");
@@ -409,7 +410,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Honda-of-Freehold.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF PRINCETON");
@@ -417,7 +418,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		 
 		    Dealer="-Honda-of-Princeton.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF TENAFLY");
@@ -425,7 +426,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  
 		    Dealer="-Honda-of-Tenafly.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF TOMS RIVER");
@@ -433,7 +434,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="-Honda-of-TomsRiver.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA UNIVERSE");
@@ -441,7 +442,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="-Honda-Universe.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HUDSON HONDA");
@@ -449,7 +450,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="-Hudson-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("JOYCE HONDA");
@@ -457,7 +458,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    File scrFile46 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		    Dealer="-Joyce-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    
 		    driver.findElement(By.name("zip")).clear();
@@ -466,7 +467,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    File scrFile47 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		    Dealer="-Madison-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    
 		    driver.findElement(By.name("zip")).clear();
@@ -475,7 +476,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    File scrFile48 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		    Dealer="-Mahwah-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    
 		    driver.findElement(By.name("zip")).clear();
@@ -484,7 +485,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    File scrFile49 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		    Dealer="-Metro-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("OPEN ROAD HONDA");
@@ -492,7 +493,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    File scrFile50 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		    Dealer="-Open-Road-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		  
 		    driver.findElement(By.name("zip")).clear();
@@ -501,7 +502,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    File scrFile51 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		    Dealer="-Paul-Miller-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("PHILLIPSBURG-EASTON");
@@ -509,7 +510,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    File scrFile52 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		    Dealer="-Phillipsburg-Easton.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    
 		    driver.findElement(By.name("zip")).clear();
@@ -518,7 +519,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Planet-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("ROUTE 22 HONDA");
@@ -526,7 +527,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Route22-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("ROUTE 23 HONDA");
@@ -534,7 +535,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="-Route23-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    
 		    driver.findElement(By.name("zip")).clear();
@@ -543,7 +544,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  
 		    Dealer="-Sussex-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("V.I.P. HONDA");
@@ -551,7 +552,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		 
 		    Dealer="-Garden-State-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("CURTISS RYAN HONDA");
@@ -559,14 +560,14 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="Curtiss-Ryan-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("GREENWICH HONDA");
 		    driver.findElement(By.linkText("GO")).click();
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		 
 		    Dealer="Greenwich-Honda.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF DANBURY");
@@ -574,7 +575,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="Honda-of=Danbury.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("HONDA OF WESTPORT");
@@ -582,7 +583,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="Honda-of-Westport.png";
-		    takeScreen(name);
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 	    	 driver.quit();   
 		
 	  }
