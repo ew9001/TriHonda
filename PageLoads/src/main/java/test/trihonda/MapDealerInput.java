@@ -95,7 +95,7 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    
 		    Dealer="-Apple-Honda.png";
-		    System.out.println("Dealer is " +Dealer);
+		    System.out.println("Dealer  is " +Dealer);
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
 		    driver.findElement(By.name("zip")).clear();
