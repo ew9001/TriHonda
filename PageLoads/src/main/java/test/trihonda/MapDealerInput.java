@@ -453,13 +453,7 @@ public class MapDealerInput {
 		    Dealer="-Hudson-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 		    
-		    driver.findElement(By.name("zip")).clear();
-		    driver.findElement(By.name("zip")).sendKeys("JOYCE HONDA");
-		    driver.findElement(By.linkText("GO")).click();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		    
-		    Dealer="-Joyce-Honda.png";
-		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
+		   
 		    
 		    
 		    driver.findElement(By.name("zip")).clear();
@@ -584,6 +578,14 @@ public class MapDealerInput {
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   
 		    Dealer="Honda-of-Westport.png";
+		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
+		    
+		    driver.findElement(By.name("zip")).clear();
+		    driver.findElement(By.name("zip")).sendKeys("JOYCE HONDA");
+		    driver.findElement(By.linkText("GO")).click();
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    
+		    Dealer="-Joyce-Honda.png";
 		    name=""+browser+"/MapDealer/"+Dealer+"";takeScreen(name);
 	    	 driver.quit();   
 		
