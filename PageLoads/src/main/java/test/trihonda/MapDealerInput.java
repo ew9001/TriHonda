@@ -93,6 +93,7 @@ public class MapDealerInput {
 		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    driver.findElement(By.name("zip")).clear();
 		    driver.findElement(By.name("zip")).sendKeys("APPLE HONDA");
+		    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		    driver.findElement(By.linkText("GO")).click();
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));Assert.assertFalse(driver.getPageSource().contains("DEALER NOT FOUND"));
 		    
