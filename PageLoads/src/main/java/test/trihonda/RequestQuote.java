@@ -52,9 +52,7 @@ public class RequestQuote {
 	  @BeforeClass
 	  public void beforeClass(String browser) throws IOException, InterruptedException, BiffException
 	  {	   
-		  InputStream fi = this.getClass().getResourceAsStream("info.xls");
-			Workbook w = Workbook.getWorkbook(fi);
-			s = w.getSheet(0);
+		 
 		  
 		  if (browser.equals("firefox")) {
 			  driver=browserFirefox();
@@ -94,7 +92,9 @@ public class RequestQuote {
 			
 		  driver.get(baseUrl);
 		  driver.get(baseUrl + "/honda-dealer-results?zip=10466&all=1");
-		  
+		  InputStream fi = this.getClass().getResourceAsStream("info.xls");
+			Workbook w = Workbook.getWorkbook(fi);
+			s = w.getSheet(0);
 		  for(int row=1; row <=s.getRows();row++) {
 				
 			   // String baseurl="http://www.google.com";
