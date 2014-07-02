@@ -96,6 +96,7 @@ public class RequestQuote {
 			   // driver.get(baseurl);
 
 				String urlname = s.getCell(0, row).getContents();
+				  System.out.println("Let me go to the link "+urlname);
 				driver.get(urlname);
 				Thread.sleep(1000);
 				takeScreen(name);
