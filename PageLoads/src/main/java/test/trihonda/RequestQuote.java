@@ -9,6 +9,10 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.read.biff.BiffException;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -23,14 +27,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import jxl.Sheet;
-import jxl.Workbook;
-import jxl.read.biff.BiffException;
+
 
 public class RequestQuote {
 	
 	Sheet s;
-
+	
 	private StringBuffer verificationErrors = new StringBuffer();
 	
 	private static WebDriver driver;
@@ -50,8 +52,9 @@ public class RequestQuote {
 	  @Test(groups = {"request"})
 		@Parameters({"browser"})
 	  @BeforeClass
-	  public void beforeClass(String browser) throws IOException, InterruptedException, BiffException
+	  public void beforeClass(String browser) throws IOException, InterruptedException
 	  {	   
+		  
 		 
 		  
 		  if (browser.equals("firefox")) {
@@ -93,7 +96,13 @@ public class RequestQuote {
 		  driver.get(baseUrl);
 		  driver.get(baseUrl + "/honda-dealer-results?zip=10466&all=1");
 		  InputStream fi = this.getClass().getResourceAsStream("info.xls");
-			Workbook w = Workbook.getWorkbook(fi);
+			Workbook w = null;
+			try {
+				w = Workbook.getWorkbook(fi);
+			} catch (BiffException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			s = w.getSheet(0);
 		  for(int row=1; row <=s.getRows();row++) {
 				
