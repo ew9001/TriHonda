@@ -2,6 +2,7 @@ package test.trihonda;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
@@ -23,6 +24,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import jxl.Sheet;
+import jxl.Workbook;
+import jxl.read.biff.BiffException;
 
 public class RequestQuote {
 	
@@ -47,9 +50,11 @@ public class RequestQuote {
 	  @Test(groups = {"request"})
 		@Parameters({"browser"})
 	  @BeforeClass
-	  public void beforeClass(String browser) throws IOException, InterruptedException
+	  public void beforeClass(String browser) throws IOException, InterruptedException, BiffException
 	  {	   
-		  
+		  InputStream fi = this.getClass().getResourceAsStream("info.xls");
+			Workbook w = Workbook.getWorkbook(fi);
+			s = w.getSheet(0);
 		  
 		  if (browser.equals("firefox")) {
 			  driver=browserFirefox();
