@@ -5,15 +5,15 @@
     <parameter name="browser" value="chrome"/>
  
   
-    <test name="Map Dealer Search" >
+    <test name="Request Quote" >
          
   <groups> 
     <run> 
-      <include name="map"/> 
+      <include name="request"/> 
     </run> 
   </groups> 
   <classes> 
-    <class name="test.trihonda.MapDealerInput"/> 
+    <class name="test.trihonda.RequestQuote"/> 
   </classes> 
 </test>
     
